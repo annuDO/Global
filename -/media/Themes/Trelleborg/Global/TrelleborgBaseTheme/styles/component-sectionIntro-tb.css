@@ -1,0 +1,92 @@
+.tb-sectionintro-container {
+  width: 100%;
+  max-width: 100%;
+}
+
+.tb-sectionintro-container .tb-sectionintro-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.tb-sectionintro-container .tb-sectionintro {
+  padding: 56px 48px;
+  color: #393939;
+}
+
+.tb-sectionintro-container .tb-sectionintro .tb-sectionintro-subtitle {
+  padding: 16px 0 24px 0;
+}
+
+.tb-sectionintro-container .tb-sectionintro .tb-sectionintro-body {
+  border-top: 1px solid #DDDDDD;
+  padding-top: 16px;
+}
+
+.tb-sectionintro-container .tb-sectionintro .tb-sectionintro-body .tb-sectionintro-content {
+  overflow: hidden;
+}
+
+.tb-sectionintro-container .tb-sectionintro .tb-sectionintro-body .tb-sectionintro-content.height-0 {
+  height: 0;
+}
+
+.tb-sectionintro-container .tb-sectionintro .tb-sectionintro-footer {
+  margin-top: 16px;
+}
+
+.tb-sectionintro-container .tb-sectionintro .tb-sectionintro-footer a {
+  color: #998242;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.tb-sectionintro-container .tb-sectionintro .tb-sectionintro-footer a svg {
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+.tb-sectionintro-container .tb-sectionintro.center {
+  margin: auto;
+  text-align: center;
+}
+
+.tb-sectionintro-container .d-none {
+  display: none;
+}
+
+.SectionIntroButtonsHide .tb-sectionintro-container .tb-sectionintro .tb-sectionintro-body .tb-sectionintro-content.height-0 {
+  height: auto !important;
+}
+
+.SectionIntroButtonsHide .tb-sectionintro-container .tb-sectionintro .tb-sectionintro-footer {
+  display: none;
+}
+
+/* height should not be zero in the editor mode */
+.on-page-editor .height-0 {
+  height: auto !important;
+}
+
+@media only screen and (max-width: 1023px) {
+  .tb-sectionintro-container .tb-sectionintro {
+    padding: 56px 8px;
+  }
+  .tb-sectionintro-container .tb-sectionintro .tb-sectionintro-body .tb-sectionintro-content {
+    overflow: hidden;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .tb-sectionintro-container .tb-sectionintro {
+    padding: 32px 16px;
+  }
+  .tb-sectionintro-container .tb-sectionintro .tb-sectionintro-subtitle {
+    padding-bottom: 16px;
+  }
+  .tb-sectionintro-container .tb-sectionintro .tb-sectionintro-body .tb-sectionintro-content {
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,95 @@
+.tb-eventlist-container {
+  padding: 32px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.tb-page-title-container {
+  width: 100%;
+  max-width: 100%;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #DDDDDD;
+}
+
+.tb-eventlist-table-header {
+  border-bottom: 1px solid #DDDDDD;
+  padding: 24px 0;
+}
+
+.tb-eventlist-table-header > div:first-child {
+  padding-left: 0;
+}
+
+.tb-eventlist-hide-place .tb-eventlist-place-header, .tb-eventlist-hide-place .tb-eventlist-accordion-place {
+  display: none;
+}
+
+.accordion .tb-eventlist-accordion-content {
+  padding: 0 0 24px 0;
+}
+
+.accordion .tb-eventlist-accordion-toggle-header {
+  border: 0 !important;
+  padding: 24px 0 !important;
+  background: url("../images/svg_icons/accordion-plus.svg") no-repeat 0 32px;
+}
+
+.accordion .active .tb-eventlist-accordion-toggle-header {
+  background: url("../images/svg_icons/accordion-minus.svg") no-repeat 0 40px;
+}
+
+.accordion .tb-eventlist-content-img-container img {
+  width: 100% !important;
+  height: initial !important;
+}
+
+.accordion .tb-eventlist-content-img-container, .accordion .tb-eventlist-content-date {
+  padding-left: 40px;
+}
+
+.accordion .tb-eventlist-accordion-item {
+  border-bottom: 1px solid #DDDDDD !important;
+}
+
+.accordion .tb-eventlist-header-label {
+  padding: 0px !important;
+}
+
+.accordion .tb-eventlist-content-section {
+  padding: 16px 0 0 0;
+}
+
+.accordion .tb-eventlist-component {
+  padding: 0px !important;
+}
+
+@media only screen and (max-width: 1024px) {
+  .tb-eventlist-container {
+    padding: 24px;
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .tb-eventlist-container {
+    padding: 16px;
+    max-width: 100%;
+  }
+  .tb-eventlist-container .accordion .tb-eventlist-content-date, .tb-eventlist-container .accordion .tb-eventlist-accordion-title, .tb-eventlist-container .accordion .tb-eventlist-accordion-place, .tb-eventlist-container .accordion .tb-eventlist-content-img-container, .tb-eventlist-container .accordion .tb-eventlist-accordion-content-description {
+    padding-left: 32px;
+  }
+  .tb-eventlist-container .accordion .tb-eventlist-content-date {
+    background-position: left center !important;
+  }
+  .tb-eventlist-container .accordion .tb-eventlist-accordion-content {
+    padding-bottom: 16px;
+  }
+}
+
+.on-page-editor .tb-eventlist-accordion-content {
+  display: block !important;
+}
+
+.on-page-editor .tb-eventlist-accordion-toggle-header {
+  background: url("../images/svg_icons/accordion-minus.svg") no-repeat 0 40px !important;
+}

@@ -1,0 +1,37 @@
+@import "abstracts/mixins-tb";
+@import "abstracts/vars";
+
+.tb-statement-container {
+    width: 100% !important;
+    color: $bg-basic-color;
+    font-style: italic;
+    text-align: center;   
+    &.tb-statement-header-underline {
+        .tb-statement-header {
+            border-bottom: 1px solid $bg-basic-color !important;
+            margin-bottom: $tb-spacing-3;
+            display: inline-block;
+        }
+    }
+    .tb-statement-img-container {
+        height: $tb-spacing-8;
+        width: $tb-spacing-8;
+    }
+    .tb-statement-caption {
+        color: $bg-basic-color !important;
+        font-style: normal !important;   
+    }
+    .tb-statement-icon-container {
+        display: inline-block;
+    }  
+    .tb-statement-font-normal {
+        font-style: normal !important;   
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .tb-statement-container {
+        margin: $tb-spacing-3 $tb-spacing-2 !important;
+        padding: $tb-spacing-3 $tb-spacing-2 !important;
+    }
+}

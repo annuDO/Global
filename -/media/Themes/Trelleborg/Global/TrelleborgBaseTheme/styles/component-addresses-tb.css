@@ -1,0 +1,97 @@
+.tb-address-container {
+  padding: 32px 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+.tb-address-container .tb-address-title {
+  color: #393939;
+  border-bottom: 1px solid #DDDDDD;
+  padding-bottom: 24px;
+}
+
+.tb-address-container .tb-address-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 24px 0 24px 0;
+  border-bottom: 1px solid #DDDDDD;
+}
+
+.tb-address-container .tb-address-body .tb-address-image {
+  width: 40%;
+  margin-right: 48px;
+}
+
+.tb-address-container .tb-address-body .tb-address-image .responsive {
+  width: 100%;
+}
+
+.tb-address-container .tb-address-body .tb-address-details {
+  width: 30%;
+  margin-right: 48px;
+  color: #393939;
+}
+
+.tb-address-container .tb-address-body .tb-address-contact-link {
+  width: 30%;
+}
+
+.tb-address-container .tb-address-body .tb-address-contact-link .tb-address-contact-link-item {
+  padding-bottom: 8px;
+}
+
+.tb-address-container .tb-address-body .tb-address-contact-link .tb-address-contact-link-item:last-child {
+  padding-bottom: 0;
+}
+
+.tb-address-container .tb-address-body .tb-address-contact-link .tb-address-contact-link-item a .tb-address-contact-link-icon svg {
+  vertical-align: middle;
+}
+
+.tb-address-container .tb-address-body .tb-address-contact-link .tb-address-contact-link-item a .tb-address-contact-link-icon path {
+  fill: #998242;
+}
+
+.tb-address-container .tb-address-body .tb-address-contact-link .tb-address-contact-link-item .tb-address-contact-link-label {
+  padding-left: 8px;
+}
+
+@media only screen and (max-width: 767px) {
+  .tb-address-container {
+    padding: 24px 16px;
+  }
+  .tb-address-container .tb-address-body {
+    padding: 16px 0;
+    display: block;
+  }
+  .tb-address-container .tb-address-body .tb-address-image {
+    width: 100%;
+  }
+  .tb-address-container .tb-address-body .tb-address-image .responsive {
+    width: 100%;
+  }
+  .tb-address-container .tb-address-body .tb-address-contact-name {
+    margin-top: 16px;
+    margin-bottom: 8px;
+  }
+  .tb-address-container .tb-address-body .tb-address-details {
+    width: 100%;
+  }
+  .tb-address-container .tb-address-body .tb-address-details .tb-contact-address {
+    width: 60%;
+  }
+  .tb-address-container .tb-address-body .tb-address-contact-link {
+    width: 100%;
+    margin-top: 16px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .tb-address-container .tb-address-body .tb-address-image {
+    margin-right: 24px;
+  }
+  .tb-address-container .tb-address-details {
+    margin-right: 0 !important;
+  }
+}

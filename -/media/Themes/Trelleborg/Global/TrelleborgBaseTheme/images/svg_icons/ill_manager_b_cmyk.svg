@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+</style>
+<g id="White">
+</g>
+<g id="Black">
+	<path d="M29.9,11.9V5H20v6.9H4V42h41.9V11.9H29.9z M22,7h6v8h-6V7z M43.9,40H6V13.9h14V17h10v-3.1h14V40z"/>
+	<g>
+		<g>
+			<rect x="26" y="23.9" width="16" height="2"/>
+		</g>
+		<g>
+			<rect x="26" y="27.9" width="16" height="2"/>
+		</g>
+		<g>
+			<rect x="26" y="32" width="12" height="2"/>
+		</g>
+		<g>
+			<g>
+				<path d="M15.8,28.9c-3.2,0-5.7-2.5-5.7-5.7s2.6-5.7,5.7-5.7c3.2,0,5.7,2.5,5.7,5.7S19,28.9,15.8,28.9z M15.8,19.5
+					c-2.1,0-3.7,1.7-3.7,3.7s1.7,3.7,3.7,3.7c2.1,0,3.7-1.7,3.7-3.7S17.9,19.5,15.8,19.5z"/>
+			</g>
+			<g>
+				<path d="M22,40l0-6.2c-0.7-1.2-2.3-1.7-3.1-1.9L16,36.4l-2.9-4.5c-1.5,0.4-2.7,1.5-3.1,2V40H8v-6.8l0.2-0.3
+					c0.1-0.1,2.1-2.8,5.3-3.1l0.6-0.1l1.9,3l1.9-3l0.6,0.1c0.2,0,4,0.5,5.4,3.2l0.1,0.2l0,6.7L22,40z"/>
+			</g>
+		</g>
+	</g>
+</g>
+<g id="Grid" class="st0">
+</g>
+</svg>

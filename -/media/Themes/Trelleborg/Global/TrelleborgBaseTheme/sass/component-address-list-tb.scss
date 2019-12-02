@@ -1,0 +1,134 @@
+@import "./abstracts/vars/_spacing-tb.scss";
+@import "./abstracts/vars/colors-tb";
+
+.tb-addresslist-container{
+    color: $tb-dark-gray;
+    width: 100%;
+    max-width: 100%;
+    .tb-addresslist-header-section{
+        padding: $tb-spacing-4 0;
+        border-bottom: 1px solid $tb-light-gray;
+        .tb-addresslist-title{
+            display: inline-block;
+        }
+        .tb-addresslist-filter-section{
+            float: right;
+            display:flex;
+            .tb-addresslist-filter{
+               margin-left: $tb-spacing-2;
+               .facet-dropdown{
+                   margin: 0;
+                   width:176px;
+               }
+               .facet-heading{
+                   display: none;
+               }
+               select{
+                -moz-appearance:none; /* Firefox */
+                -webkit-appearance:none; /* Safari and Chrome */
+                appearance:none;
+                border: none;
+                background: $tb-lighter-gray url("../images/svg_icons/nav_arrow_small_down_b_cmyk.svg");
+                background-position: right $tb-spacing-1 top 50%;
+                background-repeat: no-repeat;
+                width:176px;
+                padding: $tb-spacing-1 $tb-spacing-2;
+                cursor: pointer;
+                box-shadow: none;
+                color:$tb-dark-gray;
+                font-size: 1em;
+                line-height: 2;
+                height: auto;
+                background-size: $tb-spacing-4;
+                border-radius: 0;
+               }
+            }
+        }
+    }
+    .tb-addresslist-result-container{
+        padding: $tb-spacing-3 0;
+        border-bottom: 1px solid $tb-light-gray;
+    }
+    .tb-addresslist-row{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top:$tb-spacing-2;
+        padding-bottom:$tb-spacing-3;
+        border-bottom: 1px solid $tb-light-gray;
+    }
+    .tb-addresslist-section{
+        padding:0 ;
+        .tb-addresslist-section-heading{
+            margin-bottom: $tb-spacing-2;
+        }
+        .tb-addresslist-site-url{
+            margin-top:5px;
+            a{
+               color: $tb-gold;
+               text-decoration: none;
+               i{
+                    margin-right: $tb-spacing-1;
+                }
+                path{
+                    fill: $tb-gold;
+                }
+            }
+            
+        }
+    }
+    .tb-addresslist-location-contianer{
+        margin-top:$tb-spacing-1;
+        padding: 0;
+        .tb-address-map{
+            width: 100%;
+            float: right;
+        }
+    }
+}
+@media only screen and (max-width: 10$tb-spacing-3) {
+.tb-addresslist-container{
+    padding: 0 $tb-spacing-1 ;
+    .tb-addresslist-row{
+        margin-top:$tb-spacing-3;
+    }
+    .tb-addresslist-location-contianer{
+         margin-top:$tb-spacing-1;
+    }
+}
+}
+@media only screen and (max-width: 767px) {
+.tb-addresslist-container{
+    padding: 0 $tb-spacing-2 ;
+    .tb-addresslist-header-section{
+        padding: $tb-spacing-3 0;
+        .tb-addresslist-title{
+            font-size: 24px;
+            line-height: 32px;
+            margin-bottom: $tb-spacing-2;
+        }
+        .tb-addresslist-filter-section{
+            float: none;
+            flex-direction: column;
+            .tb-filter-label{
+                display: block;
+            }
+            .tb-addresslist-filter{
+                display: block;
+                margin-left:0;
+                &:last-child{
+                    margin-top:$tb-spacing-2;
+                }
+            }
+        }
+    }
+    .tb-addresslist-result-container{
+        display: none;
+    }
+    .tb-addresslist-location-contianer{
+        margin-top:$tb-spacing-3;
+        .tb-address-map{
+            float: left;
+        }
+    }
+}
+}

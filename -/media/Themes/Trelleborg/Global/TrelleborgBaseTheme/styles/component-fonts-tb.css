@@ -1,0 +1,185 @@
+.tb-page-heading {
+  font-size: 3em;
+  line-height: 48px;
+  color: #489E8A;
+  padding-top: 60px;
+  padding-bottom: 32px;
+}
+
+.property-value {
+  border-right: 1px solid #489E8A;
+  padding: 20px 10px;
+}
+
+.property-value span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+/* hero with opacity font scss start*/
+.tb-hero-light {
+  font-size: 3em;
+  line-height: 0.6;
+  opacity: 0.8;
+}
+
+.tb-hero-light-small {
+  font-size: 2.25em;
+  line-height: 0.67;
+  opacity: 0.8;
+}
+
+/* hero without opacity font scss start*/
+.tb-hero {
+  font-size: 3em;
+  line-height: 1;
+}
+
+.tb-hero-small {
+  font-size: 2.25em;
+  line-height: 1;
+}
+
+/* header font scss start*/
+.tb-header-1 {
+  font-size: 2.25em;
+  line-height: 1.22;
+}
+
+.tb-header-2 {
+  font-size: 1.75em;
+  line-height: 1.3;
+}
+
+.tb-header-3 {
+  font-size: 1.5em;
+  line-height: 1.33;
+}
+
+.tb-header-4 {
+  font-size: 1.25em;
+  line-height: 1.4;
+}
+
+/* header font scss end*/
+/* paragraph/body font scss start*/
+.tb-body {
+  font-size: 1em;
+  line-height: 2;
+}
+
+.tb-small {
+  font-size: 0.75em;
+  line-height: 2;
+}
+
+.tb-smaller {
+  font-size: 0.625em;
+  line-height: 1.6;
+}
+
+/* paragraph/body font scss end*/
+.tb-text-capitalize {
+  text-transform: capitalize;
+}
+
+.tb-text-uppercase {
+  text-transform: uppercase;
+}
+
+.tb-text-lowercase {
+  text-transform: lowercase;
+}
+
+/* paragraph/body font weight scss end*/
+.tb-font-900 {
+  font-weight: 900;
+}
+
+.tb-font-bold {
+  font-weight: bold;
+}
+
+.tb-font-500 {
+  font-weight: 500;
+}
+
+/* paragraph/body text alignment scss end*/
+.tb-text-align-left {
+  text-align: left;
+}
+
+.tb-text-align-right {
+  text-align: right;
+}
+
+.tb-text-align-justify {
+  text-align: justify;
+}
+
+.tb-text-align-center {
+  text-align: center;
+}
+
+.tb-text-decoration {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 1023px) {
+  .tb-header-md-1 {
+    font-size: 2.25em !important;
+    line-height: 1.22 !important;
+  }
+  .tb-header-md-2 {
+    font-size: 1.75em !important;
+    line-height: 1.3 !important;
+  }
+  .tb-header-md-3 {
+    font-size: 1.5em !important;
+    line-height: 1.33 !important;
+  }
+  .tb-header-md-4 {
+    font-size: 1.25em !important;
+    line-height: 1.4 !important;
+  }
+  .tb-body-md {
+    font-size: 1em;
+    line-height: 2;
+  }
+  .tb-small-md {
+    font-size: 0.75em;
+    line-height: 2;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .tb-header-sm-1 {
+    font-size: 2.25em !important;
+    line-height: 1.22 !important;
+  }
+  .tb-header-sm-2 {
+    font-size: 1.75em !important;
+    line-height: 1.3 !important;
+  }
+  .tb-header-sm-3 {
+    font-size: 1.5em !important;
+    line-height: 1.33 !important;
+  }
+  .tb-header-sm-4 {
+    font-size: 1.25em !important;
+    line-height: 1.4 !important;
+  }
+  .tb-body-sm {
+    font-size: 1em;
+    line-height: 2;
+  }
+  .tb-small-sm {
+    font-size: 0.75em;
+    line-height: 2;
+  }
+}

@@ -1,0 +1,97 @@
+@import "./abstracts/vars/_spacing-tb.scss";
+@import "./abstracts/vars/colors-tb";
+
+.tb-address-container{
+    padding: $tb-spacing-4 0;
+    width: 100%;
+    max-width: 100%;
+    .tb-address-title{
+        color: $tb-dark-gray;
+        border-bottom: 1px solid $tb-light-gray;
+        padding-bottom: $tb-spacing-3;
+        }
+    .tb-address-body{
+        display: flex;
+        padding: $tb-spacing-3 0 $tb-spacing-3 0;
+        border-bottom: 1px solid $tb-light-gray;
+        .tb-address-image{
+            width: 40%;
+            margin-right: $tb-spacing-6;
+            .responsive{
+                width: 100%;
+            }
+        }
+        .tb-address-details{
+            width: 30%;
+            margin-right: $tb-spacing-6;
+            color: $tb-dark-gray;
+        }
+        .tb-address-contact-link{
+            width: 30%;
+            .tb-address-contact-link-item{
+                padding-bottom: $tb-spacing-1;
+                &:last-child{
+                    padding-bottom: 0;
+                }
+                a{ 
+                    .tb-address-contact-link-icon{
+                        svg{
+                            vertical-align: middle;
+                        }
+                        path{
+                            fill:$tb-gold;
+                        }
+                    }
+                }
+                .tb-address-contact-link-label{
+                    padding-left: $tb-spacing-1;
+                }
+
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    .tb-address-container{
+        padding: $tb-spacing-3 $tb-spacing-2;
+        .tb-address-body{
+            padding: $tb-spacing-2 0;
+            display: block;
+            .tb-address-image{
+                width: 100% ;
+                .responsive{
+                    width: 100%;
+                }
+            }
+            .tb-address-contact-name{
+                margin-top:$tb-spacing-2;
+                margin-bottom:$tb-spacing-1;
+            }
+            .tb-address-details{
+                width: 100% ;
+                .tb-contact-address{
+                    width: 60%;
+                }
+            }
+            .tb-address-contact-link{
+                width: 100% ;
+                margin-top: $tb-spacing-2;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width:1023px) {
+    .tb-address-container{
+        .tb-address-body{
+            .tb-address-image{
+            margin-right: $tb-spacing-3;
+            }
+        }
+        .tb-address-details{
+            margin-right: 0 !important;
+        }
+    }
+}

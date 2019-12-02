@@ -1,0 +1,34 @@
+@import "./abstracts/vars/_spacing-tb.scss";
+@import "./abstracts/vars/colors-tb";
+.tb-producticon-bar-container{
+    .tb-producticon-bar-row{
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 1023px) {
+    .tb-producticon-bar-container{
+        .tb-producticon-bar-row{
+            .tb-producticon-bar-icon{
+                margin-right: $tb-spacing-2 !important;
+                margin-left: $tb-spacing-2 !important;
+            } 
+        }
+    }
+}
+@media only screen and (max-width: 767px) {
+    .tb-producticon-bar-container{
+        padding: $tb-spacing-2 !important;
+        .tb-producticon-bar-row{
+            .tb-producticon-bar-col{
+                .tb-producticon-bar-icon{
+                    width: 48px;
+                    height: 48px;
+                    img{
+                        width: 20px;
+                    }
+                } 
+            }
+        }
+    }
+}
+

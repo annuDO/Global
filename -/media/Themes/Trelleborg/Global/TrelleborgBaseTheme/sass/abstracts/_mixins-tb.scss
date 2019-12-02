@@ -1,0 +1,27 @@
+// Padding mixin
+// Use null for  omitting  a specific padding property
+@mixin padding($top:null, $right:null, $bottom:null, $left:null) {
+    padding-top: $top;
+    padding-right: $right;
+    padding-bottom: $bottom;
+    padding-left: $left;
+  }
+// Margin mixin  
+// Use null for  omitting  a specific margin property
+  @mixin margin($top:null, $right:null, $bottom:null, $left:null) {
+    margin-top: $top;
+    margin-right: $right;
+    margin-bottom: $bottom;
+    margin-left: $left;
+  }
+  // Font  property mixin 
+
+@mixin font-property($size: false, $lh: false) {
+  @if $size { font-size: $size; }
+  @if $lh { line-height: $lh; }
+}
+
+@mixin font-property-imp($size: false, $lh: false) {
+  @if $size { font-size: $size !important; }
+  @if $lh { line-height: $lh !important; }
+}

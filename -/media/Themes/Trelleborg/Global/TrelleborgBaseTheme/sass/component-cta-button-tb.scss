@@ -1,0 +1,131 @@
+@import "./abstracts/vars/_spacing-tb.scss";
+@import "./abstracts/vars/colors-tb";
+.tb-cta{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
+    padding: $tb-spacing-1 $tb-spacing-3;
+    border: none !important;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    &.tb-cta-button{
+        background: $tb-gold;
+        color: white;
+        background-image: linear-gradient(to left,transparent,transparent 50%,$tb-light-gold 50%,$tb-light-gold) !important;
+        background-position: 100% 0;
+        background-size: 200% 100%;
+        transition: all .25s ease-in;
+        a {
+            color: white;
+        }
+    }
+    &.tb-cta-button-secondary{
+        background: $tb-white;
+        color: $tb-dark-gray;
+        background-image: linear-gradient(to left,transparent,transparent 50%,$tb-lighter-gray 50%,$tb-lighter-gray);
+        background-position: 100% 0;
+        background-size: 200% 100%;
+        transition: all .25s ease-in;
+        border: 1px solid $tb-dark-gray;
+        a {
+            color: $tb-dark-gray  !important;
+        }
+    }
+    &.tb-cta-button-secondary-white{
+        background: $tb-dark-gray;
+        color: white;
+        border: 1px solid #fff;
+        background-image: linear-gradient(to left,transparent,transparent 50%,$tb-darker-gray 50%,$tb-darker-gray);
+        background-position: 100% 0;
+        background-size: 200% 100%;
+        transition: all .25s ease-in;
+        a {
+            color: $tb-white  !important;
+        }
+    }
+    &:hover {
+        background-position: 0 0;
+    }
+    &:disabled {
+        opacity: 0.4;
+        pointer-events: none;
+    }
+    &.disabled {
+        opacity: 0.4;
+        pointer-events: none;
+    }
+    a {
+        background: transparent;
+        text-decoration: none;
+        font-size: initial;
+    }
+}
+
+// CTA Link CSS
+
+.tb-cta-link,.tb-cta-link-arrow,.tb-link,.tb-link-arrow, .tb-cta-link-arrow-basic{
+   a{
+    color: $tb-gold;
+    text-decoration: none;
+    display: inline-block;
+    &:hover{
+        color: $tb-gold;
+        &:after {
+            width: 100%;
+        }
+    }
+    &:after {
+        content: "";
+        display: block;
+        height: 1px;
+        left: 0;
+        bottom:0;
+        background:$tb-gold;
+        transition: width 0.3s ease 0s, right 0.3s ease 0s;
+        width: 0;
+        
+    }
+   }
+}
+
+.tb-cta-link-arrow, .tb-link-arrow, .tb-cta-link-arrow-basic {
+    a{
+        background: url("../images/icons/golden-arrow.png");
+        background-position: left 100% top 50%;
+        background-repeat: no-repeat;
+        background-size:4px;
+        padding-right: 12px;
+        &:hover{
+            &:after {
+                width: 110%;
+            }
+        }
+    }
+}
+.tb-cta-link-arrow-basic {
+    a {
+        background: url("../images/svg_icons/arrow-right-white.svg") no-repeat;
+        background-position: left 100% top 50%;
+        color: $tb-white;
+        &:hover{
+            color: $tb-white;
+            &:after {
+                width: 100%;
+            }
+        }
+        &:after {
+            content: "";
+            display: block;
+            height: 1px;
+            left: 0;
+            bottom:0;
+            background: $tb-white;
+            transition: width 0.3s ease 0s, right 0.3s ease 0s;
+            width: 0;
+            
+        }        
+    }
+}

@@ -1,0 +1,198 @@
+#tb-siteselector a {
+  text-decoration: none;
+  color: #4B4B4B;
+  font-size: 18px;
+  font-family: libre franklin;
+}
+
+#tb-siteselector-overlay.overlay {
+  font-family: libre franklin;
+  position: fixed;
+  top: 50px;
+  right: 0;
+  width: 100%;
+  overflow: auto;
+  z-index: 999;
+  display: none;
+  background: #fff;
+  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+#tb-siteselector-overlay .tb-siteselector-container {
+  color: #393939;
+  padding-bottom: 32px;
+}
+
+#tb-siteselector-overlay .tb-siteselector-container .tb-siteselector-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+#tb-siteselector-overlay .tb-siteselector-container .d-none {
+  display: none;
+}
+
+#tb-siteselector-overlay .tb-siteselector-container .tb-siteselector-header {
+  height: 80px;
+  padding: 24px 0;
+}
+
+#tb-siteselector-overlay .tb-siteselector-container .tb-siteselector-header .tb-siteselector-title {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+#tb-siteselector-overlay .tb-siteselector-container .tb-siteselector-header .tb-siteselector-close-btn {
+  float: right;
+  padding: 8px;
+}
+
+#tb-siteselector-overlay .tb-siteselector-container .tb-siteselector-dropdown-menu {
+  -webkit-column-count: 3;
+  /* Chrome, Safari, Opera */
+  /* Firefox */
+  column-count: 3;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#tb-siteselector-overlay .tb-siteselector-container .tb-siteselector-dropdown-menu .tb-siteselector-menu-item {
+  font-size: 16px;
+  line-height: 32px;
+}
+
+#tb-siteselector-overlay .tb-siteselector-container .tb-siteselector-dropdown-menu .tb-siteselector-menu-item a {
+  text-align: left;
+  text-decoration: none;
+  color: #393939;
+  display: inline-block;
+}
+
+#tb-siteselector-overlay .tb-siteselector-container .tb-siteselector-dropdown-menu .tb-siteselector-menu-item a .tb-siteselector-menu-title {
+  display: block;
+}
+
+#tb-siteselector-overlay .tb-siteselector-container .tb-siteselector-dropdown-menu .tb-siteselector-menu-item a:hover {
+  color: #998242;
+}
+
+#tb-siteselector-overlay .tb-siteselector-container .tb-siteselector-dropdown-menu .tb-siteselector-menu-item a:hover:after {
+  width: 100%;
+}
+
+#tb-siteselector-overlay .tb-siteselector-container .tb-siteselector-dropdown-menu .tb-siteselector-menu-item a:after {
+  content: "";
+  display: block;
+  height: 1px;
+  left: 0;
+  bottom: 0;
+  background: #998242;
+  -webkit-transition: width 0.3s ease 0s, right 0.3s ease 0s;
+  transition: width 0.3s ease 0s, right 0.3s ease 0s;
+  width: 0;
+}
+
+#tb-siteselector-overlay .tb-siteselector-container .tb-siteselector-dropdown-menu .tb-siteselector-menu-item .siteselector-menu-desciption {
+  display: none;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+#tb-siteselector-overlay .tb-siteselector-container .tb-siteselector-overview {
+  display: none;
+}
+
+#tb-siteselector-overlay .tb-siteselector-container .tb-siteselector-overview .tb-siteselector-overview-row {
+  background: #F1F1F1;
+  min-height: 200px;
+}
+
+#tb-siteselector-overlay .tb-siteselector-container .tb-siteselector-overview .tb-siteselector-overview-row .tb-siteselector-section {
+  padding: 40px 32px;
+}
+
+#tb-siteselector-overlay .tb-siteselector-container .tb-siteselector-overview .tb-siteselector-overview-row .tb-siteselector-section .tb-siteselector-overview-title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+  color: #393939;
+  text-decoration: none;
+}
+
+#tb-siteselector-overlay .tb-siteselector-container .tb-siteselector-overview .tb-siteselector-overview-row .tb-siteselector-section .tb-siteselector-discription {
+  font-size: 12px;
+  line-height: 24px;
+}
+
+#tb-siteselector-overlay .tb-siteselector-container .tb-siteselector-overview .tb-siteselector-overview-row .tb-siteselector-img {
+  padding: 0;
+}
+
+#tb-siteselector-overlay .tb-siteselector-container .tb-siteselector-overview .tb-siteselector-overview-row .tb-siteselector-img img {
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+  #tb-siteselector-overlay .tb-siteselector-container {
+    overflow: hidden;
+    height: -webkit-calc(100vh - 60px);
+    height: calc(100vh - 60px);
+    padding: 0;
+  }
+  #tb-siteselector-overlay .tb-siteselector-container .tb-siteselector-header .tb-siteselector-title {
+    display: inline-block;
+  }
+  #tb-siteselector-overlay .tb-siteselector-container .tb-siteselector-dropdown {
+    overflow: auto;
+    height: -webkit-calc(100vh - 130px);
+    height: calc(100vh - 130px);
+  }
+  #tb-siteselector-overlay .tb-siteselector-container .tb-siteselector-dropdown-menu {
+    -webkit-column-count: 2;
+    /* Chrome, Safari, Opera */
+    /* Firefox */
+    column-count: 2;
+    -webkit-column-gap: 56px;
+    column-gap: 56px;
+  }
+  #tb-siteselector-overlay .tb-siteselector-container .tb-siteselector-dropdown-menu .tb-siteselector-menu-item:last-child a {
+    border-bottom: 1px solid #DDDDDD;
+  }
+  #tb-siteselector-overlay .tb-siteselector-container .tb-siteselector-dropdown-menu .tb-siteselector-menu-item a {
+    padding: 8px 8px 8px 0;
+    border-top: 1px solid #DDDDDD;
+    display: inline-block;
+  }
+  #tb-siteselector-overlay .tb-siteselector-container .tb-siteselector-dropdown-menu .tb-siteselector-menu-item a .tb-siteselector-menu-title {
+    font-weight: 500;
+  }
+  #tb-siteselector-overlay .tb-siteselector-container .tb-siteselector-dropdown-menu .tb-siteselector-menu-item .siteselector-menu-desciption {
+    display: block;
+  }
+  #tb-siteselector-overlay .tb-siteselector-container .tb-siteselector-overview {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #tb-siteselector-overlay .tb-siteselector-container .tb-siteselector-header {
+    padding: 24px 16px;
+  }
+  #tb-siteselector-overlay .tb-siteselector-container .tb-siteselector-dropdown-menu {
+    -webkit-column-count: 1;
+    /* Chrome, Safari, Opera */
+    /* Firefox */
+    column-count: 1;
+  }
+  #tb-siteselector-overlay .tb-siteselector-container .tb-siteselector-dropdown-menu .tb-siteselector-menu-item a {
+    padding: 16px;
+    display: block;
+  }
+}

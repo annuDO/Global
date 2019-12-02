@@ -1,0 +1,146 @@
+.tb-cta {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: center;
+  padding: 8px 24px;
+  border: none !important;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.tb-cta.tb-cta-button {
+  background: #998242;
+  color: white;
+  background-image: -webkit-gradient(linear, right top, left top, from(transparent), color-stop(50%, transparent), color-stop(50%, #C9A645), color-stop(50%, #C9A645)) !important;
+  background-image: -webkit-linear-gradient(right, transparent, transparent 50%, #C9A645 50%, #C9A645) !important;
+  background-image: linear-gradient(to left, transparent, transparent 50%, #C9A645 50%, #C9A645) !important;
+  background-position: 100% 0;
+  background-size: 200% 100%;
+  -webkit-transition: all .25s ease-in;
+  transition: all .25s ease-in;
+}
+
+.tb-cta.tb-cta-button a {
+  color: white;
+}
+
+.tb-cta.tb-cta-button-secondary {
+  background: #FFFFFF;
+  color: #393939;
+  background-image: -webkit-gradient(linear, right top, left top, from(transparent), color-stop(50%, transparent), color-stop(50%, #F1F1F1), color-stop(50%, #F1F1F1));
+  background-image: -webkit-linear-gradient(right, transparent, transparent 50%, #F1F1F1 50%, #F1F1F1);
+  background-image: linear-gradient(to left, transparent, transparent 50%, #F1F1F1 50%, #F1F1F1);
+  background-position: 100% 0;
+  background-size: 200% 100%;
+  -webkit-transition: all .25s ease-in;
+  transition: all .25s ease-in;
+  border: 1px solid #393939;
+}
+
+.tb-cta.tb-cta-button-secondary a {
+  color: #393939 !important;
+}
+
+.tb-cta.tb-cta-button-secondary-white {
+  background: #393939;
+  color: white;
+  border: 1px solid #fff;
+  background-image: -webkit-gradient(linear, right top, left top, from(transparent), color-stop(50%, transparent), color-stop(50%, #5B5B5B), color-stop(50%, #5B5B5B));
+  background-image: -webkit-linear-gradient(right, transparent, transparent 50%, #5B5B5B 50%, #5B5B5B);
+  background-image: linear-gradient(to left, transparent, transparent 50%, #5B5B5B 50%, #5B5B5B);
+  background-position: 100% 0;
+  background-size: 200% 100%;
+  -webkit-transition: all .25s ease-in;
+  transition: all .25s ease-in;
+}
+
+.tb-cta.tb-cta-button-secondary-white a {
+  color: #FFFFFF !important;
+}
+
+.tb-cta:hover {
+  background-position: 0 0;
+}
+
+.tb-cta:disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.tb-cta.disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.tb-cta a {
+  background: transparent;
+  text-decoration: none;
+  font-size: initial;
+}
+
+.tb-cta-link a, .tb-cta-link-arrow a, .tb-link a, .tb-link-arrow a, .tb-cta-link-arrow-basic a {
+  color: #998242;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.tb-cta-link a:hover, .tb-cta-link-arrow a:hover, .tb-link a:hover, .tb-link-arrow a:hover, .tb-cta-link-arrow-basic a:hover {
+  color: #998242;
+}
+
+.tb-cta-link a:hover:after, .tb-cta-link-arrow a:hover:after, .tb-link a:hover:after, .tb-link-arrow a:hover:after, .tb-cta-link-arrow-basic a:hover:after {
+  width: 100%;
+}
+
+.tb-cta-link a:after, .tb-cta-link-arrow a:after, .tb-link a:after, .tb-link-arrow a:after, .tb-cta-link-arrow-basic a:after {
+  content: "";
+  display: block;
+  height: 1px;
+  left: 0;
+  bottom: 0;
+  background: #998242;
+  -webkit-transition: width 0.3s ease 0s, right 0.3s ease 0s;
+  transition: width 0.3s ease 0s, right 0.3s ease 0s;
+  width: 0;
+}
+
+.tb-cta-link-arrow a, .tb-link-arrow a, .tb-cta-link-arrow-basic a {
+  background: url("../images/icons/golden-arrow.png");
+  background-position: left 100% top 50%;
+  background-repeat: no-repeat;
+  background-size: 4px;
+  padding-right: 12px;
+}
+
+.tb-cta-link-arrow a:hover:after, .tb-link-arrow a:hover:after, .tb-cta-link-arrow-basic a:hover:after {
+  width: 110%;
+}
+
+.tb-cta-link-arrow-basic a {
+  background: url("../images/svg_icons/arrow-right-white.svg") no-repeat;
+  background-position: left 100% top 50%;
+  color: #FFFFFF;
+}
+
+.tb-cta-link-arrow-basic a:hover {
+  color: #FFFFFF;
+}
+
+.tb-cta-link-arrow-basic a:hover:after {
+  width: 100%;
+}
+
+.tb-cta-link-arrow-basic a:after {
+  content: "";
+  display: block;
+  height: 1px;
+  left: 0;
+  bottom: 0;
+  background: #FFFFFF;
+  -webkit-transition: width 0.3s ease 0s, right 0.3s ease 0s;
+  transition: width 0.3s ease 0s, right 0.3s ease 0s;
+  width: 0;
+}

@@ -1,0 +1,99 @@
+@import "./abstracts/vars/_spacing-tb.scss";
+@import "./abstracts/vars/colors-tb";
+.tb-articlelist-container{
+    width: 100%;
+    max-width: 100%;
+    .tb-articlelist-header-section{
+        padding: $tb-spacing-3 0;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid $tb-light-gray;
+        .tb-articlelist-title{
+            display: inline-block;
+        }
+        .tb-articlelist-filter-section{
+            float: right;
+            display: flex;
+            .tb-articlelist-filter{
+                margin-left: $tb-spacing-2;
+                select{
+                    width: 190px;
+                }
+                &:first-child{
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+    .tb-articlelist-result-container{
+        padding: $tb-spacing-3 0;
+        border-bottom: 1px solid $tb-light-gray;
+        margin-bottom: $tb-spacing-1;
+    }
+    .tb-articlelist-row{
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: $tb-spacing-2;
+        color: $tb-dark-gray;
+        .tb-articlelist-item{
+            padding:$tb-spacing-5 $tb-spacing-4;
+            background: $tb-lighter-gray;
+            .tb-articlelist-item-section{
+                .tb-articlelist-item-body{
+                    margin: $tb-spacing-2 0;
+                }
+            }
+        }
+        .tb-articlelist-img-section{
+            padding: 0;
+            img{
+                width: 100%;
+                object-fit: cover;
+                height: 100%;
+            }
+        }
+    }
+    
+}
+@media only screen and (max-width: 1023px) {
+    .tb-articlelist-container{
+        .tb-articlelist-header-section{
+            flex-direction: column;
+            .tb-articlelist-filter-section{
+                float: none;
+                margin-top:$tb-spacing-3;
+            }
+        }
+        .tb-articlelist-row{
+            .tb-articlelist-item{
+                padding:$tb-spacing-4 $tb-spacing-3;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 767px) {
+    .tb-articlelist-container{
+        padding: 0 $tb-spacing-2;
+        .tb-articlelist-header-section{
+            margin:0;
+            padding: $tb-spacing-2 0;
+            .tb-articlelist-filter-section{
+                flex-direction: column;
+                margin:0;
+                .tb-articlelist-filter{
+                    margin-top:$tb-spacing-2;
+                    margin-left: 0;
+                }
+               
+            }
+        }
+        .tb-articlelist-result-container{
+            padding: $tb-spacing-2 0;
+        }
+        .tb-articlelist-row{
+            .tb-articlelist-item{
+                padding: $tb-spacing-2;
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+@function headings($from:1, $to:6) {
+    @if $from==$to {
+        @return 'h#{$from}';
+    }
+    @else {
+        @return 'h#{$from},'+headings($from+1, $to);
+    }
+}
+@function spacing($spacing) {
+    @return ($spacing*8)+px;
+}
+@function fontSize($value) {
+    @return ($value/16)+em;
+}
+

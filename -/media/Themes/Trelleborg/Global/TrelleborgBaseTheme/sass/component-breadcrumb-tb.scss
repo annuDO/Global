@@ -1,0 +1,34 @@
+@import "./abstracts/vars/_spacing-tb.scss";
+@import "./abstracts/vars/colors-tb";
+.breadcrumb-new{
+    li {
+        display: block;
+        float: left;
+
+        .navigation-title{
+            display: inline-block;
+            vertical-align: middle;
+            position: relative;
+        }
+        .separator{
+            margin: 0 $tb-spacing-1 0 $tb-spacing-1;
+        }
+        a {
+            text-transform: uppercase;
+            text-decoration: none;
+            color:$tb-gold;
+            display: block;
+        }
+    }
+    
+    li.last {
+        a {
+            color: $tb-dark-gray;
+            cursor: default;
+            pointer-events: none;
+        }
+        span.separator{
+            display: none;
+        }
+    }
+}

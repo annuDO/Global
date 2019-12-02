@@ -1,0 +1,116 @@
+.tb-downlaodlist-container {
+  width: 100%;
+  max-width: 100%;
+}
+
+.tb-downlaodlist-container .tb-downlaodlist-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  font-size: 16px;
+  line-height: 32px;
+  color: #393939;
+  padding: 24px 0;
+  border-bottom: 1px solid #DDDDDD;
+}
+
+.tb-downlaodlist-container .tb-downlaodlist-item .tb-downlaodlist-item-img {
+  padding-left: 0;
+}
+
+.tb-downlaodlist-container .tb-downlaodlist-item .tb-downlaodlist-item-img img {
+  width: 100%;
+}
+
+.tb-downlaodlist-container .tb-downlaodlist-item .tb-downlaodlist-item-text .tb-downlaodlist-item-header {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 32px;
+  margin: 0 0 16px 0;
+}
+
+.tb-downlaodlist-container .tb-downlaodlist-item .tb-downlaodlist-item-btn {
+  padding-right: 0;
+  font-weight: 900;
+}
+
+.tb-downlaodlist-container .tb-downlaodlist-item .tb-downlaodlist-item-btn a {
+  text-decoration: none;
+  color: #998242;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.tb-downlaodlist-container .tb-downlaodlist-item .tb-downlaodlist-item-btn a .tb-downlaodlist-icon {
+  margin-right: 8px;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}
+
+.tb-downlaodlist-container .tb-downlaodlist-item .tb-downlaodlist-item-btn .tb-downlaodlist-section {
+  text-align: left;
+}
+
+.tb-downlaodlist-container .tb-downlaodlist-item .tb-downlaodlist-item-btn .tb-downlaodlist-section .tb-downlaodlist-header {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+
+.tb-downlaodlist-container .tb-downlaodlist-item .tb-downlaodlist-item-btn .tb-downlaodlist-section .tb-downlaodlist-select {
+  -moz-appearance: none;
+  /* Firefox */
+  -webkit-appearance: none;
+  /* Safari and Chrome */
+  appearance: none;
+  border: none;
+  background: #F1F1F1 url("../images/svg_icons/nav_arrow_small_down_b_cmyk.svg");
+  background-position: right 8px top 50%;
+  background-repeat: no-repeat;
+  margin-bottom: 16px;
+  min-width: 100%;
+  background-size: 32px;
+  display: block;
+  padding: 8px 16px;
+  font-size: 1em;
+  line-height: 2;
+}
+
+.tb-downlaodlist-container .tb-downlaodlist-item .tb-downlaodlist-item-btn .tb-downlaodlist-section select::-ms-expand {
+  display: none;
+}
+
+@media only screen and (max-width: 1023px) {
+  .tb-downlaodlist-container .tb-downlaodlist-row {
+    margin: 0 32px;
+  }
+  .tb-downlaodlist-container .tb-downlaodlist-row .tb-downlaodlist-btn {
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .tb-downlaodlist-container .tb-downlaodlist-item {
+    margin: 0 16px;
+    padding: 16px 0;
+  }
+  .tb-downlaodlist-container .tb-downlaodlist-item .padding-0 {
+    padding: 0;
+  }
+  .tb-downlaodlist-container .tb-downlaodlist-item .tb-downlaodlist-item-text .tb-downlaodlist-item-header {
+    font-weight: bold;
+    padding: 16px 0;
+  }
+  .tb-downlaodlist-container .tb-downlaodlist-item .tb-downlaodlist-item-btn {
+    padding-top: 16px;
+    text-align: left;
+  }
+  .tb-downlaodlist-container .tb-downlaodlist-item .tb-downlaodlist-item-btn .tb-downlaodlist-section .tb-downlaodlist-select {
+    min-width: 190px;
+  }
+}

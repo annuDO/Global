@@ -1,0 +1,8 @@
+@import "styles/container/*";
+@import "abstracts/mixins";
+@import "abstracts/vars";
+.container {
+	.component-content {
+        @include clearfix();
+    }
+}

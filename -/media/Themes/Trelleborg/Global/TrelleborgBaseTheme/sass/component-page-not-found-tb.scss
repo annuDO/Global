@@ -1,0 +1,47 @@
+@import "abstracts/mixins-tb";
+@import "abstracts/vars";
+@import "./abstracts/vars/_spacing-tb.scss";
+
+.tb-pagenotfound-container {
+	background:$bg-basic-color;
+	.tb-pagenotfound-image{
+		padding: $tb-spacing-9 $tb-spacing-9 0 $tb-spacing-9;
+		.responsive{
+			width: 100%;
+		}
+	}
+	.tb-pagenotfound-message{
+		padding-top: $tb-spacing-3;	
+	}
+	.tb-pagenotfound-description{
+		padding-top: $tb-spacing-2;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+    .tb-pagenotfound-container{
+		padding: $tb-spacing-2;
+		.tb-pagenotfound-image{
+			padding: 0;
+		}
+		.tb-pagenotfound-message{
+			padding-top: $tb-spacing-2;
+           	font-size: $tb-fontSize-36;
+        }
+		.tb-pagenotfound-description{
+			padding-top: $tb-spacing-2;
+		}
+	} 
+}
+
+@media only screen and (min-width: 768px) and (max-width:1023px) {
+    .tb-pagenotfound-container{
+		padding: $tb-spacing-4 $tb-spacing-3;
+		.tb-pagenotfound-image{
+			padding: 0;
+		}
+		.tb-pagenotfound-description{
+			padding-top: $tb-spacing-2;
+		}
+	} 
+}

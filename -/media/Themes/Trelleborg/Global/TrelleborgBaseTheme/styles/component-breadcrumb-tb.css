@@ -1,0 +1,31 @@
+.breadcrumb-new li {
+  display: block;
+  float: left;
+}
+
+.breadcrumb-new li .navigation-title {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+
+.breadcrumb-new li .separator {
+  margin: 0 8px 0 8px;
+}
+
+.breadcrumb-new li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #998242;
+  display: block;
+}
+
+.breadcrumb-new li.last a {
+  color: #393939;
+  cursor: default;
+  pointer-events: none;
+}
+
+.breadcrumb-new li.last span.separator {
+  display: none;
+}

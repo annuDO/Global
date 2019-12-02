@@ -1,0 +1,95 @@
+@import "./abstracts/vars/_spacing-tb.scss";
+@import "./abstracts/vars/colors-tb";
+
+.tb-genericmediaelement-container{
+    overflow: hidden;
+    background: $tb-lighter-gray;
+    .tb-genericmediaelement-section{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .tb-genericmediaelement-img{
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .tb-genericmediaelement-des-section{
+        padding: $tb-spacing-5 $tb-spacing-4; 
+        background: $tb-lighter-gray;
+        .tb-genericmediaelement-heading{
+            margin-bottom: $tb-spacing-2;
+        }
+        .tb-genericmediaelement-para{
+            margin-bottom: $tb-spacing-2;
+        }
+        .tb-genericmediaelement-link{
+            margin-bottom: $tb-spacing-2;
+           a{
+            text-decoration: none;
+            color: $tb-gold;
+           }
+        }
+    }
+    &.tb-genericmediaelement-overlay{
+        flex-direction: column;
+        .tb-genericmediaelement-section{
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+        .tb-genericmediaelement-des-section{
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+    &.tb-genericmediaelement-horizontal{
+        flex-direction: row;
+    }
+    &.tb-genericmediaelement-reverse{
+        flex-direction: row-reverse;
+    }
+    &.tb-genericmediaelement-textwrap{
+        .tb-genericmediaelement-wrap-img{
+            width: 50%;
+            float: left;
+            margin-right: $tb-spacing-3;
+            &.right{
+                float: right !important;
+                margin-left: $tb-spacing-3;
+                margin-right: 0;
+            }
+            img{
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+        }  
+    }  
+}
+@media only screen and (max-width: 1023px) {
+    .tb-genericmediaelement-container{
+        .tb-genericmediaelement-des-section{
+            padding: $tb-spacing-4 $tb-spacing-3;
+        }
+    }
+}
+@media only screen and (max-width: 767px) {
+    .tb-genericmediaelement-container{
+        .tb-genericmediaelement-section{
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+        .tb-genericmediaelement-des-section{
+            padding: $tb-spacing-2;
+        }
+        &.tb-genericmediaelement-textwrap{
+            .tb-genericmediaelement-wrap-img{
+                float: none;
+                width: 100%;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

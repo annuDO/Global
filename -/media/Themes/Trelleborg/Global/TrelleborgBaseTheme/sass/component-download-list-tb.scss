@@ -1,0 +1,111 @@
+@import "./abstracts/vars/_spacing-tb.scss";
+@import "./abstracts/vars/colors-tb";
+.tb-downlaodlist-container{
+    width: 100%;
+    max-width: 100%;
+
+    .tb-downlaodlist-item{
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 16px;
+        line-height: 32px;
+        color: $tb-dark-gray;
+        padding: $tb-spacing-3 0;
+        border-bottom: 1px solid $tb-light-gray;
+        .tb-downlaodlist-item-img{
+            padding-left: 0;
+            img{
+                width: 100%;
+            }
+        }
+        .tb-downlaodlist-item-text{
+                .tb-downlaodlist-item-header{
+                    font-weight: bold; 
+                    font-size: 16px;
+                    line-height: 32px;
+                    margin:0 0 $tb-spacing-2 0;
+                }
+        }
+        .tb-downlaodlist-item-btn{
+            padding-right: 0;
+            font-weight: 900;
+            a{
+                text-decoration: none;
+                color: $tb-gold;
+                cursor: pointer;
+                font-size: 16px;
+                line-height: 32px;
+                .tb-downlaodlist-icon{
+                    margin-right: $tb-spacing-1;
+                    width: 16px;
+                    height: 16px;
+                    vertical-align: middle;
+                }
+            }
+            .tb-downlaodlist-section{
+                text-align: left;
+                .tb-downlaodlist-header{
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 24px;
+                    margin-bottom:$tb-spacing-1;
+                }
+                .tb-downlaodlist-select{
+                    -moz-appearance:none; /* Firefox */
+                    -webkit-appearance:none; /* Safari and Chrome */
+                    appearance:none;
+                    border: none;
+                    //background: $tb-lighter-gray url("data:image/svg+xml;utf8,<svg width='12' height='12' viewBox='0 0 12 4' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M6 4L0 0.944445L0.631579 0L6 2.72222L11.3684 0L12 0.944445L6 4Z' fill='lightgrey'/></svg>");
+                    background: $tb-lighter-gray url("../images/svg_icons/nav_arrow_small_down_b_cmyk.svg");
+                    background-position: right 8px top 50%;
+                    background-repeat: no-repeat;
+                    margin-bottom:$tb-spacing-2;
+                    min-width:100%;
+                    background-size: 32px;
+                    display: block;
+                    padding:$tb-spacing-1 $tb-spacing-2;
+                    font-size: 1em;
+                    line-height: 2;
+                }
+                select::-ms-expand { display: none; }
+            }
+        }
+    }
+   
+}
+@media only screen and (max-width: 1023px) {
+    .tb-downlaodlist-container{
+        .tb-downlaodlist-row{
+            margin:0 $tb-spacing-4;
+            .tb-downlaodlist-btn{
+                text-align: left;
+            } 
+        }
+    }
+}
+@media only screen and (max-width: 767px) {
+    .tb-downlaodlist-container{
+        .tb-downlaodlist-item{
+            margin:0 $tb-spacing-2;
+            padding: $tb-spacing-2 0;
+            .padding-0{
+                padding:0;
+            }
+            .tb-downlaodlist-item-text{
+                .tb-downlaodlist-item-header{
+                    font-weight: bold;
+                    padding: $tb-spacing-2 0;
+                }
+            }
+            .tb-downlaodlist-item-btn{
+                padding-top: $tb-spacing-2;
+                text-align: left;
+                .tb-downlaodlist-section{
+                    .tb-downlaodlist-select{
+                        min-width:190px;
+                    }
+                }
+            }
+        }
+    }
+}

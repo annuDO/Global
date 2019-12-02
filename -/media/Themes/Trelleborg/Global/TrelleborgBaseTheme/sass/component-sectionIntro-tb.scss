@@ -1,0 +1,98 @@
+@import "./abstracts/vars/_spacing-tb.scss";
+@import "./abstracts/vars/colors-tb";
+
+.tb-sectionintro-container{
+    width: 100%;
+    max-width: 100%;
+    .tb-sectionintro-row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .tb-sectionintro{
+        padding: $tb-spacing-7 $tb-spacing-6;
+        color: $tb-dark-gray;
+        .tb-sectionintro-subtitle{
+            padding:$tb-spacing-2 0 $tb-spacing-3 0;
+        }
+        .tb-sectionintro-body{
+            border-top:1px solid $tb-light-gray;
+            padding-top:$tb-spacing-2 ;
+            .tb-sectionintro-content{
+                overflow: hidden;
+                &.height-0{
+                    height: 0;
+                }
+            }
+            
+        }
+        .tb-sectionintro-footer{
+            margin-top:$tb-spacing-2;
+            a{
+                color: $tb-gold;
+                text-decoration: none;
+                display: inline-block;
+                cursor: pointer;
+                svg{
+                    margin-left: 8px;
+                    vertical-align: middle;
+                }
+            }
+        }
+        &.center{
+            margin: auto;
+            text-align: center;
+        }
+    }
+    .d-none{
+        display: none;
+    }
+}
+.SectionIntroButtonsHide {
+    .tb-sectionintro-container {
+        .tb-sectionintro {
+            .tb-sectionintro-body {
+                .tb-sectionintro-content {
+                    &.height-0 {
+                        height: auto !important;
+                    }
+                }
+            }
+            .tb-sectionintro-footer {
+                display: none;
+            }
+        }
+    }
+}
+/* height should not be zero in the editor mode */
+.on-page-editor {
+    .height-0 {
+        height: auto !important;
+    }
+}
+@media only screen and (max-width: 1023px) {
+    .tb-sectionintro-container{
+        .tb-sectionintro{
+            padding: $tb-spacing-7 $tb-spacing-1;
+            .tb-sectionintro-body{
+                .tb-sectionintro-content{
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 767px) {
+    .tb-sectionintro-container{
+        .tb-sectionintro{
+            padding: $tb-spacing-4 $tb-spacing-2;
+            .tb-sectionintro-subtitle{
+                padding-bottom: $tb-spacing-2;
+            }
+            .tb-sectionintro-body{
+                .tb-sectionintro-content{
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+@import "../../abstracts/vars/colors-tb";
+
+a{ 
+    display: inline-block;
+    text-decoration: none;
+    color: $tb-primary-gold;
+    &:hover{
+        &:after {
+            width: 100%;
+        }
+    }
+    &:after {
+        content: "";
+        display: block;
+        height: 1px;
+        left: 0;
+        bottom:0;
+        background:$tb-primary-gold;
+        transition: width 0.3s ease 0s, right 0.3s ease 0s;
+        width: 0;
+    }
+}

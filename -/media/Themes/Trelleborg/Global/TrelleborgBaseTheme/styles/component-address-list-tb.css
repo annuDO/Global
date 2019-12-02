@@ -1,0 +1,159 @@
+.tb-addresslist-container {
+  color: #393939;
+  width: 100%;
+  max-width: 100%;
+}
+
+.tb-addresslist-container .tb-addresslist-header-section {
+  padding: 32px 0;
+  border-bottom: 1px solid #DDDDDD;
+}
+
+.tb-addresslist-container .tb-addresslist-header-section .tb-addresslist-title {
+  display: inline-block;
+}
+
+.tb-addresslist-container .tb-addresslist-header-section .tb-addresslist-filter-section {
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tb-addresslist-container .tb-addresslist-header-section .tb-addresslist-filter-section .tb-addresslist-filter {
+  margin-left: 16px;
+}
+
+.tb-addresslist-container .tb-addresslist-header-section .tb-addresslist-filter-section .tb-addresslist-filter .facet-dropdown {
+  margin: 0;
+  width: 176px;
+}
+
+.tb-addresslist-container .tb-addresslist-header-section .tb-addresslist-filter-section .tb-addresslist-filter .facet-heading {
+  display: none;
+}
+
+.tb-addresslist-container .tb-addresslist-header-section .tb-addresslist-filter-section .tb-addresslist-filter select {
+  -moz-appearance: none;
+  /* Firefox */
+  -webkit-appearance: none;
+  /* Safari and Chrome */
+  appearance: none;
+  border: none;
+  background: #F1F1F1 url("../images/svg_icons/nav_arrow_small_down_b_cmyk.svg");
+  background-position: right 8px top 50%;
+  background-repeat: no-repeat;
+  width: 176px;
+  padding: 8px 16px;
+  cursor: pointer;
+  box-shadow: none;
+  color: #393939;
+  font-size: 1em;
+  line-height: 2;
+  height: auto;
+  background-size: 32px;
+  border-radius: 0;
+}
+
+.tb-addresslist-container .tb-addresslist-result-container {
+  padding: 24px 0;
+  border-bottom: 1px solid #DDDDDD;
+}
+
+.tb-addresslist-container .tb-addresslist-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 16px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #DDDDDD;
+}
+
+.tb-addresslist-container .tb-addresslist-section {
+  padding: 0;
+}
+
+.tb-addresslist-container .tb-addresslist-section .tb-addresslist-section-heading {
+  margin-bottom: 16px;
+}
+
+.tb-addresslist-container .tb-addresslist-section .tb-addresslist-site-url {
+  margin-top: 5px;
+}
+
+.tb-addresslist-container .tb-addresslist-section .tb-addresslist-site-url a {
+  color: #998242;
+  text-decoration: none;
+}
+
+.tb-addresslist-container .tb-addresslist-section .tb-addresslist-site-url a i {
+  margin-right: 8px;
+}
+
+.tb-addresslist-container .tb-addresslist-section .tb-addresslist-site-url a path {
+  fill: #998242;
+}
+
+.tb-addresslist-container .tb-addresslist-location-contianer {
+  margin-top: 8px;
+  padding: 0;
+}
+
+.tb-addresslist-container .tb-addresslist-location-contianer .tb-address-map {
+  width: 100%;
+  float: right;
+}
+
+@media only screen and (max-width: 10 24px) {
+  .tb-addresslist-container {
+    padding: 0 8px;
+  }
+  .tb-addresslist-container .tb-addresslist-row {
+    margin-top: 24px;
+  }
+  .tb-addresslist-container .tb-addresslist-location-contianer {
+    margin-top: 8px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .tb-addresslist-container {
+    padding: 0 16px;
+  }
+  .tb-addresslist-container .tb-addresslist-header-section {
+    padding: 24px 0;
+  }
+  .tb-addresslist-container .tb-addresslist-header-section .tb-addresslist-title {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 16px;
+  }
+  .tb-addresslist-container .tb-addresslist-header-section .tb-addresslist-filter-section {
+    float: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .tb-addresslist-container .tb-addresslist-header-section .tb-addresslist-filter-section .tb-filter-label {
+    display: block;
+  }
+  .tb-addresslist-container .tb-addresslist-header-section .tb-addresslist-filter-section .tb-addresslist-filter {
+    display: block;
+    margin-left: 0;
+  }
+  .tb-addresslist-container .tb-addresslist-header-section .tb-addresslist-filter-section .tb-addresslist-filter:last-child {
+    margin-top: 16px;
+  }
+  .tb-addresslist-container .tb-addresslist-result-container {
+    display: none;
+  }
+  .tb-addresslist-container .tb-addresslist-location-contianer {
+    margin-top: 24px;
+  }
+  .tb-addresslist-container .tb-addresslist-location-contianer .tb-address-map {
+    float: left;
+  }
+}

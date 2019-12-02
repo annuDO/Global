@@ -1,0 +1,122 @@
+.tb-productlist-container {
+  width: 100%;
+  max-width: 100%;
+}
+
+.tb-productlist-container .tb-productlist-title {
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+.tb-productlist-container .tb-productlist-filter-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.tb-productlist-container .tb-productlist-filter-wrapper .tb-productlist-filter {
+  margin-top: 24px;
+  margin-right: 16px;
+}
+
+.tb-productlist-container .tb-productlist-filter-wrapper .tb-productlist-filter:last-child {
+  margin-right: 0;
+}
+
+.tb-productlist-container .tb-productlist-filter-wrapper .tb-productlist-filter label {
+  display: block;
+}
+
+.tb-productlist-container .tb-productlist-filter-wrapper .tb-productlist-filter select {
+  width: 200px;
+}
+
+.tb-productlist-container .tb-productlist-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -8px;
+}
+
+.tb-productlist-container .tb-productlist-row .tb-productlist-col {
+  padding: 0 8px;
+  margin-top: 16px;
+}
+
+.tb-productlist-container .tb-productlist-row .tb-productlist-col .tb-productlist-img-wrapper {
+  line-height: 0;
+}
+
+.tb-productlist-container .tb-productlist-row .tb-productlist-col .tb-productlist-img-wrapper img {
+  width: 100%;
+}
+
+.tb-productlist-container .tb-productlist-row .tb-productlist-col .tb-productlist-section {
+  padding: 16px 32px 40px 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #F1F1F1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.tb-productlist-container .tb-productlist-row .tb-productlist-col .tb-productlist-section .tb-productlist-info {
+  margin: 16px 0;
+}
+
+.tb-productlist-container .tb-productlist-row .tb-productlist-col .tb-productlist-section .tb-productlist-info ul {
+  list-style: disc !important;
+  margin-left: 16px;
+}
+
+.tb-productlist-container .tb-productlist-row .tb-productlist-col .tb-productlist-section .tb-productlist-info ul .tb-productlist-info-item {
+  color: #998242;
+}
+
+.tb-productlist-container .tb-productlist-row .tb-productlist-col .tb-productlist-section .tb-productlist-info ul .tb-productlist-info-item .tb-productlist-info-text {
+  color: #393939;
+}
+
+.tb-productlist-container .tb-productlist-row .tb-productlist-col .tb-productlist-section .tb-productlist-link-wrapper {
+  padding-bottom: 16px;
+  border-bottom: 1px solid #DDDDDD;
+}
+
+.tb-productlist-container .tb-productlist-row .tb-productlist-col .tb-productlist-section .tb-productlist-download-links {
+  margin-top: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.tb-productlist-container .tb-productlist-row .tb-productlist-col .tb-productlist-section .tb-productlist-download-links a {
+  margin-bottom: 8px;
+}
+
+.tb-productlist-container .tb-productlist-row .tb-productlist-col .tb-productlist-section .tb-productlist-download-links a:last-child {
+  margin-bottom: 0;
+}
+
+.tb-productlist-container .tb-productlist-row .tb-productlist-col .tb-productlist-section .tb-productlist-download-links a .tb-productlist-download-icon {
+  margin-right: 8px;
+}
+
+@media only screen and (max-width: 767px) {
+  .tb-productlist-container {
+    padding: 16px;
+  }
+  .tb-productlist-container .tb-productlist-row .tb-productlist-col {
+    padding: 0;
+  }
+}

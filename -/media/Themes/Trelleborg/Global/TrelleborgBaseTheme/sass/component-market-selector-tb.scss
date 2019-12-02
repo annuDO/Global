@@ -1,0 +1,113 @@
+@import "./abstracts/vars/_spacing-tb.scss";
+@import "./abstracts/vars/colors-tb";
+#tb-marketselector{
+    a{
+        text-decoration: none;
+        color:$tb-gold;
+        font-size: 18px;
+    }
+}
+#tb-marketselector-overlay{
+    &.overlay{
+        width: 100%;
+        position: fixed;
+        top: 50px;
+        left: 0;
+        z-index: 999;
+        display: none;
+        background: #fff;
+        color: $tb-dark-gray;
+        box-shadow: 3px 5px 5px #d3d3d3;
+    }
+    .tb-marketselector-close-btn{
+        font-size: 28px;
+        float: right;
+        padding: $tb-spacing-4;
+        transform: rotate(45deg);
+        text-decoration: none;
+    }
+    .tb-marketselector-title{
+        text-align: center;
+        font-size: 36px;
+        margin-top: $tb-spacing-5;
+        line-height: 44px;
+    }
+    .tb-marketselector-subtitle{
+        text-align: center;
+        font-size: 20px;
+        margin: $tb-spacing-2 0 $tb-spacing-4 0;
+        line-height: 28px;
+        a{
+            color: $tb-gold;
+            text-decoration: none;
+        }
+    }
+    .tb-marketselector-sections{
+        margin: $tb-spacing-4 220px;
+        border-top: 1px solid $tb-light-gray;
+        overflow: auto;
+        height: 380px;
+        section{
+            h3{
+               color: #434343;	
+               margin: $tb-spacing-4 0 $tb-spacing-3 0;
+               text-transform: capitalize;
+               font-weight: bold;
+               font-size: 20px;
+               line-height: 28px;
+            }
+            ul{
+                -webkit-column-count: 4; /* Chrome, Safari, Opera */
+                -moz-column-count: 4; /* Firefox */
+                column-count: 4;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                .tb-marketselector-menu-item{
+                    a{
+                        color: $tb-dark-gray;
+                        text-decoration: none;
+                        text-align: center;
+                        font-size: 12px;
+                        font-weight: bold;
+                        line-height: 40px;
+                        display: inline-block;
+                        span{
+                            text-transform: capitalize;
+                            &.tb-marketselector-language{
+                                font-weight: normal;
+                            }
+                            &.tb-marketselector-separator{
+                                margin: 0 $tb-spacing-1;
+                            }
+                        }
+                        &:hover{
+                            &:after {
+                                width: 100%;
+                            }
+                        }
+                        &:after {
+                            content: "";
+                            display: block;
+                            height: 1px;
+                            left: 0;
+                            bottom:0;
+                            background:$tb-gold;
+                            transition: width 0.3s ease 0s, right 0.3s ease 0s;
+                            width: 0;
+                        }
+                    }
+                    &.selected{
+                        a{
+                            color: $tb-gold;
+                            span{
+                                color: $tb-gold !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+  
+}

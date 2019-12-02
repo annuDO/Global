@@ -1,0 +1,95 @@
+@import "abstracts/mixins-tb";
+@import "abstracts/vars";
+
+.tb-eventlist-container {
+    padding: $tb-spacing-4;
+    width: 100%;
+    max-width: 100%;  
+}
+.tb-page-title-container {
+    width: 100%;
+    max-width: 100%;  
+    padding-bottom: $tb-spacing-3;    
+    border-bottom: 1px solid $tb-light-gray;
+}
+.tb-eventlist-table-header {   
+    border-bottom: 1px solid $tb-light-gray;
+    padding: $tb-spacing-3 0;
+    > div:first-child {
+        padding-left: 0;
+    }
+}
+.tb-eventlist-hide-place {
+    .tb-eventlist-place-header, .tb-eventlist-accordion-place {
+        display: none;
+    }    
+} 
+.accordion {
+    .tb-eventlist-accordion-content {
+        padding: 0 0 $tb-spacing-3 0;
+    }
+    .tb-eventlist-accordion-toggle-header {
+        border: 0 !important;
+        padding: $tb-spacing-3 0 !important;
+        background: url("../images/svg_icons/accordion-plus.svg") no-repeat 0 $tb-spacing-4;     
+    }    
+    .active {
+        .tb-eventlist-accordion-toggle-header {
+            background: url("../images/svg_icons/accordion-minus.svg") no-repeat 0 40px;
+        }
+    }
+    .tb-eventlist-content-img-container {
+        img {
+            width: 100% !important;
+            height: initial !important;
+        }
+    }
+    .tb-eventlist-content-img-container, .tb-eventlist-content-date {
+        padding-left: $tb-spacing-5;
+    }
+    .tb-eventlist-accordion-item {
+        border-bottom: 1px solid $tb-light-gray !important;
+    }
+    .tb-eventlist-header-label {
+        padding: 0px !important;
+    }
+    .tb-eventlist-content-section {
+        padding: $tb-spacing-2 0 0 0;
+    }
+    .tb-eventlist-component {
+        padding: 0px !important;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .tb-eventlist-container {
+        padding: $tb-spacing-3;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .tb-eventlist-container {
+        padding: $tb-spacing-2;
+        max-width: 100%;
+        .accordion {
+            .tb-eventlist-content-date, .tb-eventlist-accordion-title, .tb-eventlist-accordion-place, .tb-eventlist-content-img-container, .tb-eventlist-accordion-content-description {
+                padding-left: $tb-spacing-4;
+            }
+            .tb-eventlist-content-date {
+                background-position: left center !important;
+            }
+            .tb-eventlist-accordion-content {
+                padding-bottom: $tb-spacing-2;
+            }
+        }
+    }
+}
+
+.on-page-editor {
+    .tb-eventlist-accordion-content {
+        display: block !important;
+    }
+    .tb-eventlist-accordion-toggle-header{
+        background: url("../images/svg_icons/accordion-minus.svg") no-repeat 0 40px !important;
+    }
+}

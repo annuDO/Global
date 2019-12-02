@@ -1,0 +1,49 @@
+{
+    "Instruments":[
+        {
+            "TickerId":109,
+            "ISIN":"SE0000114837",
+            "TickerName":"Trelleborg B",
+            "TickerType":"SHARE",
+            "TickerSymbol":"TREL B",
+            "MarketPlace":"XSTO ",
+            "TradeCurrency":"SEK",
+            "Quotes":[
+                        {
+                        "QuoteType":"PartOfDay",
+                        "Delta":0.5,
+                        "BidPrice":161.5,
+                        "AskPrice":161.6,
+                        "HighPrice":161.75,
+                        "LowPrice":160.4,
+                        "Turnover":39617536.9100000,
+                        "OpenPrice":161.1,
+                        "UnadjustedPrice":161.55,
+                        "QuoteTime":"2019-11-26T13:49:20+01:00",
+                        "Price":161.55,
+                        "Quantity":245985,
+                        "DeltaPercentage":-0.003104626
+                    },
+                    {
+                        "QuoteType":"EndOfDay",
+                        "Delta":1.300003,
+                        "BidPrice":161.15,
+                        "AskPrice":161.25,
+                        "HighPrice":161.65,
+                        "LowPrice":160.05,
+                        "Turnover":116354786.6800000,
+                        "OpenPrice":160.55,
+                        "UnadjustedPrice":161.05,
+                        "QuoteTime":"2019-11-25T18:00:00+01:00",
+                        "Price":161.05,
+                        "Quantity":722762,
+                        "DeltaPercentage":0.008137735
+                    }
+                ]
+        }
+    ],
+    "Title":"Cision IR Modules Data",
+    "Author":"Cision Sverige AB",
+    "DataProvider":"Millistream Market Data AB",
+    "DatePackaged":"2019-11-26T13:05:49.929589Z"
+}

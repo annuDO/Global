@@ -1,0 +1,37 @@
+.tb-contact-finder-container .tb-contact-finder-header {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.tb-contact-finder-container .tb-contact-finder-link a {
+  text-decoration: none;
+  color: #393939;
+}
+
+.tb-contact-finder-container .tb-contact-finder-link a .tb-contact-finder-icon {
+  vertical-align: top;
+}
+
+.tb-contact-finder-container .tb-contact-finder-link.selected a {
+  color: #998242;
+}
+
+.tb-contact-finder-container .tb-contact-finder-links .tb-contact-finder-icon {
+  vertical-align: middle;
+}
+
+.tb-contact-finder-container .tb-contact-finder-links .tb-contact-finder-icon img {
+  width: 12px;
+  height: 12px;
+}
+
+@media only screen and (max-width: 1023px) {
+  .tb-contact-finder-container .tb-contact-finder-address-type .tb-input-checkbox {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-right: 0;
+  }
+}

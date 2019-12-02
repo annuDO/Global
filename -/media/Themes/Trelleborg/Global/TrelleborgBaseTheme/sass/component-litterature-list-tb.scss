@@ -1,0 +1,96 @@
+.tb-litteraturelist-container{
+    color: $tb-dark-gray;
+    width: 100%;
+    max-width: 100%;
+    .tb-litteraturelist-header{
+        padding: $tb-spacing-5 0 $tb-spacing-3 0;
+        border-bottom: 1px solid $tb-light-gray;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .col-md-6{
+            padding: 0;
+        }
+        .tb-litteraturelist-filter{
+            padding: 0;
+            text-align: right;
+            select{
+                width: 190px;
+            }
+         }
+    }
+    
+    .tb-litteraturelist-row{
+        border-bottom: 1px solid $tb-light-gray;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: $tb-spacing-3 0;
+        .tb-litteraturelist-item-date{
+            padding: 0;
+        }
+        .tb-litteraturelist-download,.tb-litteraturelist-bookmark{
+            a{
+                text-decoration: none;
+                color: $tb-gold;
+                cursor: pointer;
+                .tb-litteraturelist-item-icon{
+                    margin-right: $tb-spacing-1;
+                    width: 16px;
+                    height: 16px;
+                    vertical-align: middle;
+                }
+            }
+        }
+        .tb-litteraturelist-download{
+            padding: 0;
+        }
+    }
+    .is-mobile{
+        display: none;
+    }
+}
+@media only screen and (max-width: 1023px) {
+    .tb-litteraturelist-container{
+        .is-mobile{
+            display: block;
+        }
+        .is-desktop{
+            display: none;
+        }
+    }
+}
+@media only screen and (max-width: 767px) {
+    .tb-litteraturelist-container{
+        padding: $tb-spacing-2;
+        .tb-litteraturelist-header{
+            padding: $tb-spacing-2 0;
+            .tb-litteraturelist-filter{
+                margin-top: $tb-spacing-2;
+                text-align: left;
+            }
+        }
+        .tb-litteraturelist-head{
+            display: none;
+            
+        }
+        .tb-litteraturelist-row{
+            padding: $tb-spacing-2 0;
+            .col-md-5{
+                padding: 0;
+            }
+        }
+        .tb-litteraturelist-row{
+            flex-direction: row-reverse;
+            .col-6{
+                text-align: right;
+                margin-top:$tb-spacing-2;
+                padding: 0;
+                &:last-child{
+                    text-align: left;
+                }
+            }
+        }
+        
+    }
+}

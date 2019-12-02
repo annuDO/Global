@@ -1,0 +1,112 @@
+.tb-litteraturelist-container {
+  color: #393939;
+  width: 100%;
+  max-width: 100%;
+}
+
+.tb-litteraturelist-container .tb-litteraturelist-header {
+  padding: 40px 0 24px 0;
+  border-bottom: 1px solid #DDDDDD;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.tb-litteraturelist-container .tb-litteraturelist-header .col-md-6 {
+  padding: 0;
+}
+
+.tb-litteraturelist-container .tb-litteraturelist-header .tb-litteraturelist-filter {
+  padding: 0;
+  text-align: right;
+}
+
+.tb-litteraturelist-container .tb-litteraturelist-header .tb-litteraturelist-filter select {
+  width: 190px;
+}
+
+.tb-litteraturelist-container .tb-litteraturelist-row {
+  border-bottom: 1px solid #DDDDDD;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  padding: 24px 0;
+}
+
+.tb-litteraturelist-container .tb-litteraturelist-row .tb-litteraturelist-item-date {
+  padding: 0;
+}
+
+.tb-litteraturelist-container .tb-litteraturelist-row .tb-litteraturelist-download a, .tb-litteraturelist-container .tb-litteraturelist-row .tb-litteraturelist-bookmark a {
+  text-decoration: none;
+  color: #998242;
+  cursor: pointer;
+}
+
+.tb-litteraturelist-container .tb-litteraturelist-row .tb-litteraturelist-download a .tb-litteraturelist-item-icon, .tb-litteraturelist-container .tb-litteraturelist-row .tb-litteraturelist-bookmark a .tb-litteraturelist-item-icon {
+  margin-right: 8px;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}
+
+.tb-litteraturelist-container .tb-litteraturelist-row .tb-litteraturelist-download {
+  padding: 0;
+}
+
+.tb-litteraturelist-container .is-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 1023px) {
+  .tb-litteraturelist-container .is-mobile {
+    display: block;
+  }
+  .tb-litteraturelist-container .is-desktop {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .tb-litteraturelist-container {
+    padding: 16px;
+  }
+  .tb-litteraturelist-container .tb-litteraturelist-header {
+    padding: 16px 0;
+  }
+  .tb-litteraturelist-container .tb-litteraturelist-header .tb-litteraturelist-filter {
+    margin-top: 16px;
+    text-align: left;
+  }
+  .tb-litteraturelist-container .tb-litteraturelist-head {
+    display: none;
+  }
+  .tb-litteraturelist-container .tb-litteraturelist-row {
+    padding: 16px 0;
+  }
+  .tb-litteraturelist-container .tb-litteraturelist-row .col-md-5 {
+    padding: 0;
+  }
+  .tb-litteraturelist-container .tb-litteraturelist-row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+  .tb-litteraturelist-container .tb-litteraturelist-row .col-6 {
+    text-align: right;
+    margin-top: 16px;
+    padding: 0;
+  }
+  .tb-litteraturelist-container .tb-litteraturelist-row .col-6:last-child {
+    text-align: left;
+  }
+}

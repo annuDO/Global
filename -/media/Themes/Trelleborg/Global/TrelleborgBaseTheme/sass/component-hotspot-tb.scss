@@ -1,0 +1,47 @@
+@import "./abstracts/vars/_spacing-tb.scss";
+@import "./abstracts/vars/colors-tb";
+.tb-hotspot-container{
+    .tb-hotspot-img-wrapper{
+        position: relative;
+        line-height: 0;
+        display: flex;
+        .tb-hotspot-icon{
+            position: absolute;
+            z-index: 10;
+            background: $tb-gold;
+            padding: $tb-spacing-1 !important;
+            border-radius: 50%;
+            img{
+                width: 11px;
+                height: 11px;
+            }
+            &.selected{
+                padding: $tb-spacing-2 !important;
+                background: $tb-white;
+                img{
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1023px) {
+    .tb-hotspot-container{
+        .tb-hotspot-section{
+            padding: $tb-spacing-2 $tb-spacing-3 $tb-spacing-4 !important;
+        }
+    }  
+}
+@media only screen and (max-width: 767px) {
+    .tb-hotspot-container{
+        padding: $tb-spacing-2 !important;
+        .tb-hotspot-header{
+            padding-bottom:$tb-spacing-2 !important;
+            margin: 0 0 $tb-spacing-2 0 !important;
+        }
+        .tb-hotspot-section{
+            padding: $tb-spacing-2 !important;
+        }
+    }  
+}
